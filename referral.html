@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Refer a friend — GulGuli</title>
+<meta name="description" content="Know a business owner who needs better tools? Send us their details and we will say thanks.">
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="mark" viewBox="0 0 64 64">
+      <g fill="var(--marigold)">
+        <ellipse cx="32" cy="14" rx="9" ry="14"/>
+        <ellipse cx="32" cy="14" rx="9" ry="14" transform="rotate(72 32 32)"/>
+        <ellipse cx="32" cy="14" rx="9" ry="14" transform="rotate(144 32 32)"/>
+        <ellipse cx="32" cy="14" rx="9" ry="14" transform="rotate(216 32 32)"/>
+        <ellipse cx="32" cy="14" rx="9" ry="14" transform="rotate(288 32 32)"/>
+      </g>
+      <circle cx="32" cy="32" r="8" fill="var(--ink)"/>
+    </symbol>
+    <symbol id="chev" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="GulGuli home"><svg><use href="#mark"/></svg>GulGuli</a>
+    <ul class="nav-links" id="navLinks">
+      <li class="has-menu">
+        <button type="button" aria-expanded="false">Platform <svg><use href="#chev"/></svg></button>
+        <ul class="menu">
+          <li><a href="platform.html">Platform overview</a></li>
+          <li><a href="platform-capture.html">Capture</a></li>
+          <li><a href="platform-nurture.html">Nurture</a></li>
+          <li><a href="platform-close.html">Close</a></li>
+          <li><a href="platform-evangelize.html">Evangelize</a></li>
+          <li><a href="platform-reactivate.html">Reactivate</a></li>
+          <li><a href="platform-ai-assistant.html">AI assistant</a></li>
+          <li><a href="features.html">All features</a></li>
+        </ul>
+      </li>
+      <li class="has-menu">
+        <button type="button" aria-expanded="false">Solutions <svg><use href="#chev"/></svg></button>
+        <ul class="menu">
+          <li><a href="solutions.html">All solutions</a></li>
+          <li><a href="solutions-entrepreneurs.html">Entrepreneurs</a></li>
+          <li><a href="solutions-real-estate.html">Real estate</a></li>
+          <li><a href="solutions-home-services.html">Home services</a></li>
+          <li><a href="solutions-dental.html">Dental</a></li>
+          <li><a href="solutions-legal.html">Legal</a></li>
+          <li><a href="solutions-salons-spas.html">Salons and spas</a></li>
+        </ul>
+      </li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="teams.html">Done for you</a></li>
+      <li class="has-menu">
+        <button type="button" aria-expanded="false">Resources <svg><use href="#chev"/></svg></button>
+        <ul class="menu">
+          <li><a href="demo.html">Watch the demo</a></li>
+          <li><a href="reviews.html">Customer reviews</a></li>
+          <li><a href="switch.html">Switch to GulGuli</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="onboarding-support.html">Onboarding and support</a></li>
+          <li><a href="training-videos.html">Training videos</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="nav-cta">
+      <a class="login" href="#">Log in</a>
+      <a class="btn btn-primary btn-sm" href="demo.html">Watch the demo</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h14M3 10h14M3 14h14"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+<section class="page-hero"><div class="wrap"><nav class="crumbs"><a href="index.html">Home</a><span>/</span><span>Referral</span></nav><span class="eyebrow">Refer a friend</span><h1>Know someone who should meet us?</h1><p class="lede">Send us the name of a business owner who could use GulGuli. We will treat them kindly and thank you properly. [Reward for you: amount] and [reward for them: amount].</p></div></section>
+<section class="alt"><div class="wrap"><div class="split"><div class="stack"><span class="eyebrow">Who are you referring?</span><h2>Tell us a little</h2><ul class="checklist"><li>We contact them once, politely</li><li>They get the same 14-day free trial, no card</li><li>You hear when it works out</li></ul><p class="fine">[Confirm reward rules and timing before launch.]</p></div><form class="form" data-form><div class="row"><label>Their first name<input name="first" required></label><label>Their last name (optional)<input name="last"></label></div><div class="row"><label>Their email<input type="email" name="email" required></label><label>Their phone (optional)<input type="tel" name="phone"></label></div><label>Your name<input name="you" required></label><label>Your email<input type="email" name="youemail"></label><p class="fine">We use these details only to contact the person you refer about GulGuli.</p><button class="btn btn-primary" type="submit">Send referral</button></form></div></div></section>
+<section><div class="wrap"><div class="section-head center"><span class="eyebrow">Prefer to earn more?</span><h2>Share often? Become an affiliate.</h2></div><div class="cta-band"><div><h3>Recurring commission</h3><p>If you recommend GulGuli regularly, the affiliate programme may suit you better.</p></div><a class="btn btn-dark" href="affiliates.html">See affiliates</a></div></div></section>
+<section class="final"><svg class="bloom" viewBox="0 0 64 64" aria-hidden="true"><use href="#mark"/></svg><div class="wrap"><h2>Thank you for spreading the word.</h2><p class="lede">Want to see what you are recommending?</p><div class="cta-row"><a class="btn btn-primary" href="demo.html">Watch the demo</a><a class="btn btn-light" href="pricing.html">See pricing</a></div></div></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="brand" href="index.html"><svg><use href="#mark"/></svg>GulGuli</a>
+        <p>All the tools to grow. And people to run them with you.</p>
+      </div>
+      <div><h4>Platform</h4><ul><li><a href="platform.html">Platform overview</a></li><li><a href="platform-capture.html">Capture</a></li><li><a href="platform-nurture.html">Nurture</a></li><li><a href="platform-close.html">Close</a></li><li><a href="platform-evangelize.html">Evangelize</a></li><li><a href="platform-reactivate.html">Reactivate</a></li><li><a href="platform-ai-assistant.html">AI assistant</a></li><li><a href="features.html">All features</a></li></ul></div>
+      <div><h4>Solutions</h4><ul><li><a href="solutions-entrepreneurs.html">Entrepreneurs</a></li><li><a href="solutions-real-estate.html">Real estate</a></li><li><a href="solutions-home-services.html">Home services</a></li><li><a href="solutions-dental.html">Dental</a></li><li><a href="solutions-legal.html">Legal</a></li><li><a href="solutions-salons-spas.html">Salons and spas</a></li><li><a href="solutions.html">All solutions</a></li></ul></div>
+      <div><h4>Resources</h4><ul><li><a href="pricing.html">Pricing</a></li><li><a href="demo.html">Watch the demo</a></li><li><a href="switch.html">Switch to GulGuli</a></li><li><a href="blog.html">Blog</a></li><li><a href="podcast.html">Podcast</a></li><li><a href="updates.html">Product updates</a></li><li><a href="releases.html">Release notes</a></li><li><a href="press.html">Press</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="careers.html">Careers</a></li><li><a href="affiliates.html">Affiliates</a></li><li><a href="referral.html">Refer a friend</a></li><li><a href="security.html">Security</a></li><li><a href="contact.html">Contact</a></li><li><a href="leave-a-review.html">Leave a review</a></li></ul></div>
+      <div><h4>Support</h4><ul><li><a href="onboarding-support.html">Onboarding and support</a></li><li><a href="training-videos.html">Training videos</a></li><li><a href="teams.html">Done for you</a></li><li><a href="#">System status</a></li><li><a href="#">Log in</a></li><li><a href="#">Billing portal</a></li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 GulGuli. All rights reserved.</span>
+      <span><a href="security.html">Data privacy</a><a href="#">Accessibility</a><a href="#">Legal</a></span>
+    </div>
+    <p class="foot-apps">iOS and Android apps included on every plan.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
