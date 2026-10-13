@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pricing — GulGuli</title>
+<meta name="description" content="One flat price. Every feature. Unlimited users and contacts. Sprout, Bloom and Orchard plans, with people included on every one.">
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+.toggle{display:inline-flex;align-items:center;gap:12px;margin-top:28px;font-weight:600}
+.toggle input{appearance:none;width:48px;height:28px;border-radius:999px;background:var(--line);position:relative;cursor:pointer;margin:0}
+.toggle input::after{content:"";position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:var(--surface);transition:transform .15s}
+.toggle input:checked{background:var(--leaf)}
+.toggle input:checked::after{transform:translateX(20px)}
+.toggle .save{background:var(--marigold-soft);color:var(--ink);font-size:.8rem;padding:3px 10px;border-radius:999px}
+.fees{margin-top:clamp(48px,6vw,80px);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(22px,3vw,36px)}
+.fees table{width:100%;border-collapse:collapse;margin-top:18px;font-variant-numeric:tabular-nums}
+.fees th,.fees td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line)}
+.fees th{font-size:.82rem;color:var(--ink-2);font-weight:600}
+.fees .scroll{overflow-x:auto}
+.teams-box{margin-top:clamp(48px,6vw,80px);background:var(--marigold-soft);border-radius:20px;padding:clamp(28px,4vw,44px);display:grid;grid-template-columns:minmax(0,1.3fr) auto;gap:24px;align-items:center}
+.teams-box p{color:var(--ink-2)}
+@media (max-width:760px){.teams-box{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="mark" viewBox="0 0 64 64">
+      <g fill="var(--marigold)">
+        <ellipse cx="32" cy="14" rx="9" ry="14"/>
+        <ellipse cx="32" cy="14" rx="9" ry="14" transform="rotate(72 32 32)"/>
+        <ellipse cx="32" cy="14" rx="9" ry="14" transform="rotate(144 32 32)"/>
+        <ellipse cx="32" cy="14" rx="9" ry="14" transform="rotate(216 32 32)"/>
+        <ellipse cx="32" cy="14" rx="9" ry="14" transform="rotate(288 32 32)"/>
+      </g>
+      <circle cx="32" cy="32" r="8" fill="var(--ink)"/>
+    </symbol>
+    <symbol id="chev" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="GulGuli home"><svg><use href="#mark"/></svg>GulGuli</a>
+    <ul class="nav-links" id="navLinks">
+      <li class="has-menu">
+        <button type="button" aria-expanded="false">Platform <svg><use href="#chev"/></svg></button>
+        <ul class="menu">
+          <li><a href="index.html#platform">Platform overview</a></li>
+          <li><a href="index.html#tab-capture">Capture</a></li>
+          <li><a href="index.html#tab-nurture">Nurture</a></li>
+          <li><a href="index.html#tab-close">Close</a></li>
+          <li><a href="index.html#tab-evangelize">Evangelize</a></li>
+          <li><a href="index.html#tab-reactivate">Reactivate</a></li>
+          <li><a href="index.html#ai">AI assistant</a></li>
+        </ul>
+      </li>
+      <li class="has-menu">
+        <button type="button" aria-expanded="false">Solutions <svg><use href="#chev"/></svg></button>
+        <ul class="menu">
+          <li><a href="index.html#industries">Home services</a></li>
+          <li><a href="index.html#industries">Real estate</a></li>
+          <li><a href="index.html#industries">Dental and clinics</a></li>
+          <li><a href="index.html#industries">Salons and spas</a></li>
+          <li><a href="index.html#industries">All industries</a></li>
+        </ul>
+      </li>
+      <li><a href="pricing.html" aria-current="page">Pricing</a></li>
+      <li><a href="index.html#teams">Done for you</a></li>
+      <li class="has-menu">
+        <button type="button" aria-expanded="false">Resources <svg><use href="#chev"/></svg></button>
+        <ul class="menu">
+          <li><a href="index.html#demo">Watch the demo</a></li>
+          <li><a href="index.html#switch">Switch to GulGuli</a></li>
+          <li><a href="index.html#people">Onboarding and support</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="nav-cta">
+      <a class="login" href="index.html#demo">Log in</a>
+      <a class="btn btn-primary btn-sm" href="index.html#demo">Watch the demo</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h14M3 10h14M3 14h14"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+<section class="page-head center" id="plans">
+  <div class="wrap">
+    <span class="eyebrow">Pricing</span>
+    <h2>One flat price. Every feature. People included.</h2>
+    <p class="lede" style="margin-top:14px">Pick a plan by how much help you want, not by which features you get. Every plan has unlimited users and unlimited contacts, and no contract.</p>
+    <label class="toggle"><span>Monthly</span><input type="checkbox" id="billingToggle"><span>Yearly</span><span class="save">2 months free</span></label>
+    <p class="fine" id="billingNote">Billed monthly. Cancel anytime.</p>
+
+    <div class="plans" style="text-align:left">
+      <div class="plan">
+        <h3>Sprout</h3>
+        <p class="for">For solo owners and small teams getting organised.</p>
+        <div class="amount"><b data-monthly="$97" data-yearly="$81">$97</b><span>/ month</span></div>
+        <a class="btn btn-ghost" href="index.html#demo">Start free trial</a>
+        <ul>
+          <li>CRM, pipelines and one inbox</li>
+          <li>Websites, funnels and forms</li>
+          <li>Calendars and online booking</li>
+          <li>Email, SMS and WhatsApp</li>
+          <li>Invoices and payments</li>
+          <li>Review requests and widgets</li>
+          <li>Onboarding calls and 24/7 live chat</li>
+        </ul>
+      </div>
+      <div class="plan popular">
+        <span class="flag">Most chosen</span>
+        <h3>Bloom</h3>
+        <p class="for">For businesses that want the AI to do the follow-up.</p>
+        <div class="amount"><b data-monthly="$197" data-yearly="$164">$197</b><span>/ month</span></div>
+        <a class="btn btn-primary" href="index.html#demo">Start free trial</a>
+        <ul>
+          <li class="plus">Everything in Sprout, plus</li>
+          <li>AI assistant on chat, WhatsApp and SMS</li>
+          <li>Voice AI for missed calls</li>
+          <li>AI review replies and content</li>
+          <li>Courses and memberships</li>
+          <li>Office hours every other week</li>
+          <li>Priority support</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>Orchard</h3>
+        <p class="for">For agencies and multi-location businesses.</p>
+        <div class="amount"><b data-monthly="$397" data-yearly="$331">$397</b><span>/ month</span></div>
+        <a class="btn btn-ghost" href="index.html#demo">Start free trial</a>
+        <ul>
+          <li class="plus">Everything in Bloom, plus</li>
+          <li>Unlimited client sub-accounts</li>
+          <li>Your logo, domain and colours</li>
+          <li>Rebill messages and AI at your price</li>
+          <li>Snapshot templates you can clone</li>
+          <li>API access</li>
+          <li>Dedicated account manager</li>
+        </ul>
+      </div>
+    </div>
+    <p class="price-note" style="margin-inline:auto">Prices shown are launch prices. Founding members keep their rate for as long as they stay subscribed.</p>
+  </div>
+</section>
+
+<section class="included" style="padding-top:0">
+  <div class="wrap">
+    <h2 style="font-size:clamp(1.5rem,3vw,2.2rem)">Included on every plan</h2>
+    <ul class="included-grid">
+      <li>Unlimited users and contacts</li>
+      <li>One inbox for WhatsApp, SMS, email and social</li>
+      <li>Sales pipelines and deal tracking</li>
+      <li>Websites, funnels and landing pages</li>
+      <li>Forms, surveys and quizzes</li>
+      <li>Calendars and online booking</li>
+      <li>Missed-call text-back</li>
+      <li>Workflow automations</li>
+      <li>Email and SMS marketing</li>
+      <li>Invoices, estimates and payments</li>
+      <li>Review requests and monitoring</li>
+      <li>Social planner</li>
+      <li>iOS and Android apps</li>
+      <li>Two one-to-one onboarding calls</li>
+      <li>24/7 live chat and screen-share support</li>
+      <li>Course and training video library</li>
+      <li>Switching guides and migration help</li>
+      <li>No contract, cancel anytime</li>
+    </ul>
+  </div>
+</section>
+
+<section style="padding-top:0" id="fees">
+  <div class="wrap">
+    <div class="fees">
+      <h3>Pricing and fees schedule</h3>
+      <p class="lede" style="font-size:1rem;margin-top:8px">Each plan includes a monthly allowance of messages, calls and AI usage. Anything beyond it is billed at cost, with no markup, at the rates below.</p>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Usage</th><th>Included each month</th><th>Beyond the allowance</th></tr></thead>
+          <tbody>
+            <tr><td>Outbound SMS</td><td>1,000 segments</td><td>$0.012 per segment</td></tr>
+            <tr><td>WhatsApp conversations</td><td>500 conversations</td><td>Meta's rate for your country</td></tr>
+            <tr><td>Email sends</td><td>25,000 emails</td><td>$0.80 per 1,000</td></tr>
+            <tr><td>Voice minutes</td><td>500 minutes</td><td>$0.02 per minute</td></tr>
+            <tr><td>Local phone number</td><td>1 included</td><td>$2 per extra number</td></tr>
+            <tr><td>AI messages (Bloom and Orchard)</td><td>2,000 replies</td><td>$0.02 per reply</td></tr>
+            <tr><td>Voice AI minutes (Bloom and Orchard)</td><td>200 minutes</td><td>$0.13 per minute</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="price-note">Allowances and rates are launch values and may be adjusted with 30 days' notice. Your current usage is always visible on the billing page.</p>
+    </div>
+
+    <div class="teams-box" id="teams">
+      <div class="stack">
+        <h3>GulGuli Teams: want it done for you?</h3>
+        <p>Trained virtual assistants with a project manager and daily reporting, from $149 a month. They can run your GulGuli account, or help with admin, content, design and more. No platform subscription required.</p>
+      </div>
+      <a class="btn btn-dark" href="index.html#demo">Talk to us about Teams</a>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="faq-grid">
+      <div class="stack">
+        <h2>Questions people ask before they start.</h2>
+        <p class="lede">Anything else, message us from the chat bubble and a person will answer.</p>
+      </div>
+      <div>
+        <details open><summary>Is there a contract?</summary><p>No. Every plan is month to month (or yearly if you choose it). Cancel from the billing page at any time and keep access until the end of the period you've paid for.</p></details>
+        <details><summary>What happens during the 14-day trial?</summary><p>You get the full plan you chose, plus your first setup call inside the first three days. If it isn't right, cancel before day 14 and you won't be charged.</p></details>
+        <details><summary>Does it really work with WhatsApp?</summary><p>Yes. We connect a WhatsApp Business number to your inbox so your team and the AI can reply from the same thread as SMS, email and Instagram. Broadcasts to WhatsApp use approved templates.</p></details>
+        <details><summary>I'm not technical. Will I be able to use it?</summary><p>That's what the setup calls are for. We build the pipelines, forms and automations with you on screen, then train you on the parts you'll touch daily. Most owners are running on their own by the end of week one.</p></details>
+        <details><summary>How does switching from another tool work?</summary><p>We import contacts, pipelines, templates and booking links on your first setup call, and run both systems side by side until you're ready to switch the old one off. Guides exist for HubSpot, Keap, Mailchimp, ActiveCampaign, Zoho, Pipedrive, Kartra, ClickFunnels, Calendly and more.</p></details>
+        <details><summary>Can I bring my own phone number?</summary><p>Yes. Port your existing business number in, or pick a new local number during setup. Calls, texts and missed-call text-back all run through it.</p></details>
+        <details><summary>What does "unlimited users and contacts" mean?</summary><p>Exactly that. Add your whole team and your whole list without the price changing. Usage charges apply only to what gets sent beyond the included allowances.</p></details>
+        <details><summary>Can I white-label it for my own clients?</summary><p>On the Orchard plan, yes. Your clients see your logo, your domain and your pricing. You manage every account from one dashboard.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <svg class="bloom" viewBox="0 0 64 64" aria-hidden="true"><use href="#mark"/></svg>
+  <div class="wrap">
+    <h2>Start your 14 days. Your setup call is on us.</h2>
+    <p class="lede">No card needed to start.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="index.html#demo">Watch the demo</a>
+      <a class="btn btn-light" href="#plans">Compare plans</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="brand" href="index.html"><svg><use href="#mark"/></svg>GulGuli</a>
+        <p>All the tools to grow. And people to run them with you.</p>
+      </div>
+      <div><h4>Platform</h4><ul><li><a href="index.html#platform">Platform overview</a></li><li><a href="index.html#tab-capture">Capture</a></li><li><a href="index.html#tab-nurture">Nurture</a></li><li><a href="index.html#tab-close">Close</a></li><li><a href="index.html#tab-evangelize">Evangelize</a></li><li><a href="index.html#tab-reactivate">Reactivate</a></li><li><a href="index.html#ai">AI assistant</a></li></ul></div>
+      <div><h4>Solutions</h4><ul><li><a href="index.html#industries">Real estate</a></li><li><a href="index.html#industries">Home services</a></li><li><a href="index.html#industries">Dental</a></li><li><a href="index.html#industries">Salons and spas</a></li><li><a href="index.html#industries">All industries</a></li></ul></div>
+      <div><h4>Resources</h4><ul><li><a href="pricing.html">Pricing</a></li><li><a href="index.html#demo">Watch the demo</a></li><li><a href="index.html#switch">Switch to GulGuli</a></li><li><a href="#">Blog</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="#">About</a></li><li><a href="index.html#stories">Reviews</a></li><li><a href="#">Careers</a></li><li><a href="#">Affiliates</a></li><li><a href="#">Contact</a></li></ul></div>
+      <div><h4>Support</h4><ul><li><a href="index.html#people">Onboarding and support</a></li><li><a href="#">Training videos</a></li><li><a href="#">System status</a></li><li><a href="#">Log in</a></li><li><a href="#">Billing portal</a></li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 GulGuli. All rights reserved.</span>
+      <span><a href="#">Data privacy</a><a href="#">Accessibility</a><a href="#">Legal</a></span>
+    </div>
+    <p class="foot-apps">iOS and Android apps included on every plan.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
