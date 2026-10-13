@@ -103,4 +103,13 @@
       if (note) note.textContent = yearly ? "Billed yearly. Two months free." : "Billed monthly. Cancel anytime.";
     });
   }
+  // Forms on inner pages are not wired to a backend yet: show an honest notice instead of pretending to send.
+  Array.prototype.slice.call(document.querySelectorAll("form[data-form]")).forEach(function (f) {
+    f.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var note = f.querySelector(".form-status");
+      if (!note) { note = document.createElement("p"); note.className = "fine form-status"; note.setAttribute("role", "status"); f.appendChild(note); }
+      note.textContent = "Thanks! This form is not connected yet, so nothing was sent. (Connect a form service before launch.)";
+    });
+  });
 })();
