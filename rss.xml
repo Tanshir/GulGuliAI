@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>GulGuli release notes</title>
+  <link>https://www.gulguli.com/releases.html</link>
+  <description>Release notes for GulGuli.</description>
+  <item>
+    <title>Release of October 9, 2026 — GulGuli</title>
+    <link>https://www.gulguli.com/releases.html#r1</link>
+    <guid>https://www.gulguli.com/releases.html#r1</guid>
+    <description>Quality-of-life changes for the shared inbox.</description>
+    <category>Messaging</category>
+  </item>
+  <item>
+    <title>Release of October 2, 2026 — GulGuli</title>
+    <link>https://www.gulguli.com/releases.html#r2</link>
+    <guid>https://www.gulguli.com/releases.html#r2</guid>
+    <description>More control over when workflows run.</description>
+    <category>Automation</category>
+  </item>
+  <item>
+    <title>Release of September 25, 2026 — GulGuli</title>
+    <link>https://www.gulguli.com/releases.html#r3</link>
+    <guid>https://www.gulguli.com/releases.html#r3</guid>
+    <description>Booking improvements.</description>
+    <category>Calendar</category>
+  </item>
+  <item>
+    <title>Release of September 18, 2026 — GulGuli</title>
+    <link>https://www.gulguli.com/releases.html#r4</link>
+    <guid>https://www.gulguli.com/releases.html#r4</guid>
+    <description>Reviews and reputation.</description>
+    <category>Reviews</category>
+  </item>
+</channel>
+</rss>
