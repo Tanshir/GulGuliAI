@@ -113,3 +113,29 @@
     });
   });
 })();
+
+  // Topic filters: [data-filter] buttons filter [data-tags] items on the page.
+  var filterBtns = Array.prototype.slice.call(document.querySelectorAll("[data-filter]"));
+  if (filterBtns.length) {
+    var items = Array.prototype.slice.call(document.querySelectorAll("[data-tags]"));
+    var empty = document.createElement("p");
+    empty.className = "fine"; empty.hidden = true;
+    empty.textContent = "No posts in this topic yet.";
+    if (items.length && items[0].closest("section")) items[0].closest("section").appendChild(empty);
+    filterBtns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var f = b.getAttribute("data-filter"), shown = 0;
+        items.forEach(function (it) {
+          var tags = (it.getAttribute("data-tags") || "").split("|");
+          var on = f === "All" || tags.indexOf(f) > -1;
+          it.hidden = !on; if (on) shown++;
+        });
+        empty.hidden = shown > 0;
+        filterBtns.forEach(function (x) {
+          var on = x === b;
+          x.classList.toggle("active", on);
+          x.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+      });
+    });
+  }

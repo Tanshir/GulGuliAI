@@ -428,7 +428,8 @@ a.feature{text-decoration:none;transition:border-color .15s}a.feature:hover{bord
 .stars-input{display:flex;gap:6px;font-size:1.6rem;color:var(--marigold)}
 .chip-row{display:flex;flex-wrap:wrap;gap:8px}
 .chip{display:inline-block;padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font-size:.9rem;color:var(--ink-2);text-decoration:none}
-a.chip:hover{border-color:var(--marigold);color:var(--ink)}
+a.chip:hover,button.chip:hover,.chip.active{border-color:var(--marigold);color:var(--ink)}
+button.chip{cursor:pointer;font:inherit}
 .job{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}
 .job .meta{margin-top:4px}
 .episode{display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px;align-items:start;padding:22px 0;border-bottom:1px solid var(--line)}
