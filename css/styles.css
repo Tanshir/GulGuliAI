@@ -184,6 +184,7 @@ section{padding-block:clamp(64px,9vw,120px)}
 .tab[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:center}
 .panel[hidden]{display:none}
+[hidden]{display:none!important} /* grid/flex display rules above would otherwise override the hidden attribute (blog filters, timeline filters) */
 .panel-copy{display:grid;gap:16px;max-width:32em}
 .panel-copy ul{margin:4px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;color:var(--ink-2)}
 .panel-copy li{padding-left:18px;position:relative}
